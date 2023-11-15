@@ -85,6 +85,7 @@ h2 {
   font-size: 14px;
 }
 pre {
+  overflow: scroll;
   margin: 16px auto;
   background-color: #191a1b;
   border: 1px solid #eae1e1;
@@ -102,4 +103,7 @@ ul {
 dfn {
   font-weight: 600;
   font-style: normal;
+}
+
+@media (min-width) {
 }
