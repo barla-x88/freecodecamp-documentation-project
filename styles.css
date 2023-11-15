@@ -10,12 +10,18 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #444546;
+}
+
 .main-header {
   height: 70px;
   background-color: #d1f5ff;
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
 }
 
 .burgers {
@@ -35,4 +41,65 @@ html {
 
 .logo {
   width: 80px;
+}
+
+main {
+  padding: 32px 24px;
+}
+
+.main-section {
+  color: #ffffff;
+}
+
+.sub-section {
+  margin: 18px auto;
+}
+
+h1 {
+  padding-bottom: 7px;
+  border-bottom: 2.5px solid #bdbaba;
+  margin: 32px 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 7px;
+  border: 1px solid #ffffff;
+}
+
+.sub-section > p {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.sub-section > p + p {
+  margin-top: 8px;
+}
+
+.sub-section a {
+  color: white;
+  font-size: 14px;
+}
+pre {
+  margin: 16px auto;
+  background-color: #191a1b;
+  border: 1px solid #eae1e1;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+ul {
+  margin-top: 5px;
+  list-style-position: inside;
+  font-size: 14px;
+}
+
+dfn {
+  font-weight: 600;
+  font-style: normal;
 }

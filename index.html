@@ -18,5 +18,410 @@
         <img src="img/new-php-logo.svg" alt="PHP 8 logo" class="logo" />
       </div>
     </header>
+    <main id="main-doc">
+      <!-- MAIN SECTON 1 STARTS HERE -->
+      <section class="main-section" id="Introduction_to_PHP_8">
+        <header>
+          <h1>Introduction to PHP 8</h1>
+        </header>
+        <!-- Section 1 -->
+        <section class="sub-section">
+          <h2>What is PHP?</h2>
+          <p>
+            PHP (Hypertext Preprocessor) is a widely-used open-source scripting
+            language that is particularly suited for web development.
+          </p>
+          <p>
+            It is embedded within HTML code and executed on the server,
+            generating dynamic content that can be sent to the client's web
+            browser.
+          </p>
+        </section>
+        <section class="sub-section">
+          <h2>Using PHP in HTML</h2>
+          <p>
+            To embed PHP code in an HTML file, use the opening &lt;?php tag and
+            the closing ?> tag. Everything between these tags is treated as PHP
+            code.
+          </p>
+          <code>
+            <pre>
+&lt;?php
+    // Your PHP code here
+?&gt;
+</pre
+            >
+          </code>
+        </section>
+        <!-- section 2 -->
+        <section class="sub-section">
+          <h2>Commenting Code</h2>
+          <p>Single line comments can be written by prefixing with //</p>
+          <code>
+            <pre>
+&lt;?php
+    // Single line comment
+?&gt;
+</pre
+            >
+          </code>
+          <p>
+            As an alternative to the double slash, PHP also supports the Perl
+            style comments. Where # is used as the character to indicate that
+            the rest of the line will be treated as a comment.
+          </p>
+          <p>Multi lines comment can be written using /* comment */ syntax.</p>
+          <code>
+            <pre>
+&lt;?php
+    # Title: My first PHP script
+    /*
+        Multi
+        line
+        comment
+    */
+?&gt;
+</pre
+            >
+          </code>
+        </section>
+        <!-- section 3 -->
+        <section class="sub-section">
+          <h2>Outputting Data to the Client</h2>
+          <p>
+            PHP provides several methods to output data to the client's browser.
+            The most common are:
+          </p>
+          <ul>
+            <li>echo() statement</li>
+            <li>printf() function</li>
+            <li>sprintf() function</li>
+            <li>print_r() function</li>
+            <li>var_dump() function</li>
+          </ul>
+        </section>
+        <!-- section 4 -->
+        <section class="sub-section">
+          <h2>Declaring Variables and Constants</h2>
+          <p>
+            In PHP, variables are declared using the dollar sign ($) followed by
+            the variable name. PHP is loosely typed, meaning you don't need to
+            declare the data type explicitly.
+          </p>
+          <code>
+            <pre>
+&lt;?php
+    $name = "John";
+    $age = 25;
+?&gt;
+  </pre
+            >
+          </code>
+          <p>
+            Constants are declared using the define() function. Once set, a
+            constant's value cannot be changed during the script's execution.
+          </p>
+          <code>
+            <pre>
+&lt;?php
+    define("PI", 3.14);
+    define("SITE_NAME", "My Website");
+?&gt;
+  </pre
+            >
+          </code>
+        </section>
+        <!-- section 5 -->
+        <section class="sub-section">
+          <h2>String Interpolation</h2>
+          <p>
+            String interpolation allows you to embed variables directly into a
+            string. This is done using double quotes ("") or using the curly
+            braces ({}) syntax.
+          </p>
+          <code>
+            <pre>
+&lt;?php
+    $name = "John";
+    echo "My name is $name.";
+    // or
+    echo "My name is {$name}.";
+?&gt;
+  </pre
+            >
+          </code>
+        </section>
+      </section>
+      <!-- MAIN SECTON 1 ENDS HERE -->
+
+      <!-- MAIN SECTON 2 STARTS HERE -->
+      <section class="main-section" id="Data_types_and_operators">
+        <header>
+          <h1>Data types and operators</h1>
+        </header>
+        <section class="sub-section">
+          <h2>PHP Data Types</h2>
+          <p>PHP supports several data types:</p>
+          <ul>
+            <li>String: Textual data enclosed in quotes.</li>
+            <li>Integer: Whole numbers without decimal points.</li>
+            <li>Float (Double): Numbers with decimal points.</li>
+            <li>Boolean: Represents true or false.</li>
+            <li>Array: An ordered, indexed collection of values.</li>
+            <li>Object: Instances of user-defined classes.</li>
+            <li>NULL: Represents a variable with no value.</li>
+          </ul>
+        </section>
+        <section class="sub-section">
+          <h2>Operators in PHP</h2>
+          <p>
+            <dfn>Operators</dfn> perform operations on variables and values. PHP
+            supports various operators, including arithmetic, assignment,
+            comparison, logical, and more.
+          </p>
+          <code>
+            <pre>
+&lt;?php
+    $a = 5;
+    $b = 3;
+
+    $sum = $a + $b;      // Addition
+    $difference = $a - $b; // Subtraction
+    $product = $a * $b;   // Multiplication
+    $quotient = $a / $b;  // Division
+    $remainder = $a % $b; // Modulus
+?&gt;
+  </pre
+            >
+          </code>
+        </section>
+        <section class="sub-section">
+          <h2>Expressions in PHP</h2>
+          <p>
+            PHP supports various <dfn>expressions</dfn>, which are combinations
+            of values and operators that result in a single value. For example:
+          </p>
+          <code>
+            <pre>
+  &lt;?php
+      $sum = 10 + 5;      // Addition
+      $difference = 10 - 5; // Subtraction
+      $product = 10 * 5;   // Multiplication
+      $quotient = 10 / 5;  // Division
+      $remainder = 10 % 3; // Modulus
+  ?&gt;
+    </pre
+            >
+          </code>
+        </section>
+      </section>
+      <!-- MAIN SECTON 2 ENDS HERE -->
+
+      <!-- MAIN SECTION 3 STARTS HERE -->
+      <section class="main-section" id="Control_structures_in_PHP">
+        <header>
+          <h1>Control structures in PHP</h1>
+        </header>
+        <section class="sub-section">
+          <h2>Different types of control structures in PHP</h2>
+          <p>PHP supports Various types of control structures</p>
+          <ul>
+            <li>If Statement</li>
+            <li>Switch Statement</li>
+            <li>For loop</li>
+            <li>While loop</li>
+            <li>Break and Continue Statements</li>
+          </ul>
+        </section>
+        <section class="sub-section">
+          <h2>Conditional Statements</h2>
+          <p>If Statement</p>
+          <code>
+            <pre>
+&lt;?php
+    $x = 10;
+
+    if ($x > 5) {
+        echo "The variable is greater than 5.";
+    } elseif ($x == 5) {
+        echo "The variable is equal to 5.";
+    } else {
+        echo "The variable is less than 5.";
+    }
+?&gt;
+  </pre
+            >
+          </code>
+          <p>Switch Statement</p>
+          <code>
+            <pre>
+&lt;?php
+  $day = "Monday";
+
+  switch ($day) {
+      case "Monday":
+          echo "It's the beginning of the week.";
+          break;
+      case "Friday":
+          echo "It's almost the weekend!";
+          break;
+      default:
+          echo "It's a regular day.";
+  }
+?&gt;
+  </pre
+            >
+          </code>
+        </section>
+        <section class="sub-section">
+          <h2>Looping Statements</h2>
+          <p>For Loop</p>
+          <code>
+            <pre>
+&lt;?php
+  for ($i = 0; $i &lt; 5; $i++) {
+    echo $i;
+  }
+?&gt;
+  </pre
+            >
+          </code>
+          <p>While Loop</p>
+          <code>
+            <pre>
+&lt;?php
+  $counter = 0;
+
+  while ($counter &lt; 5) {
+      echo $counter;
+      $counter++;
+  }
+?&gt;
+  </pre
+            >
+          </code>
+          <p>Break and Continue Statements</p>
+          <code>
+            <pre>
+&lt;?php
+  for ($i = 0; $i &lt; 10; $i++) {
+    if ($i == 5) {
+        break; // Exit the loop when i equals 5
+    }
+    if ($i % 2 == 0) {
+        continue; // Skip even numbers
+    }
+    echo $i;
+  }
+?&gt;
+  </pre
+            >
+          </code>
+        </section>
+      </section>
+      <!-- MAIN SECTION 3 ENDS HERE -->
+
+      <!-- MAIN SECTION 4 STARTS HERE -->
+      <section class="main-section" id="Functions_in_PHP">
+        <header>
+          <h1>Functions in PHP</h1>
+        </header>
+        <section class="sub-section">
+          <h2>Types of functions</h2>
+          <p>
+            <dfn>Functions</dfn> are blocks of reusable code that can be defined
+            and executed in a program. They allow you to encapsulate a set of
+            actions, making your code more modular and easier to maintain. PHP
+            supports various types of functions:
+          </p>
+          <ul>
+            <li>Built-in Functions: echo(), strlen() etc.</li>
+            <li>User-Defined Functions</li>
+            <li>Anonymous Functions (Closures)</li>
+            <li>Recursive Functions</li>
+            <li>Variadic Functions</li>
+          </ul>
+        </section>
+        <section class="sub-section">
+          <h2>Declaring Functions</h2>
+          <p>A function definition looks like this:</p>
+          <code>
+            <pre>
+&lt;?php
+  function sayHello() {
+    echo "Hello, World!";
+  }
+?&gt;
+  </pre
+            >
+          </code>
+        </section>
+        <section class="sub-section">
+          <h2>Function Parameters and Arguments</h2>
+          <p>
+            <dfn>Parameters</dfn> are variables used in a function declaration
+            to represent the values that a function expects to receive when it
+            is called. They act as placeholders for the actual values
+            (arguments) that will be passed to the function during its
+            invocation.
+          </p>
+          <p>
+            <dfn>Arguments</dfn> are the actual values that are passed to a
+            function when it is called.
+          </p>
+        </section>
+        <code>
+          <pre>
+&lt;?php
+  //Function with parameter
+  function greet($name) {
+    echo "Hello, $name!";
+  }
+
+  //Calling function with argument
+  greet("John");
+</pre
+          >
+        </code>
+      </section>
+      <!-- MAIN SECTION 4 ENDS HERE -->
+
+      <!-- SECTION 5 STARTS HERE -->
+      <section class="main-section" id="References">
+        <header>
+          <h1>References</h1>
+        </header>
+        <section class="sub-section">
+          <h2>Useful Links</h2>
+          <p>
+            Here are online resources where you can find reference documentation
+            for PHP 8
+          </p>
+          <ul>
+            <li><a href="https://www.php.net/manual/en/">PHP Manual</a></li>
+            <li>
+              <a href="https://www.w3schools.com/php/"
+                >W3Schools PHP Tutorial</a
+              >
+            </li>
+            <li>
+              <a href="https://www.php.net/manual/en/funcref.php"
+                >PHP.net Function Reference</a
+              >
+            </li>
+            <li>
+              <a href="https://www.geeksforgeeks.org/php/"
+                >GeeksforGeeks PHP Programming Language</a
+              >
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/questions/tagged/php"
+                >Stack Overflow - PHP Questions</a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
