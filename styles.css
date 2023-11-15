@@ -16,12 +16,14 @@ body {
 
 .main-header {
   height: 70px;
+  width: 100%;
   background-color: #d1f5ff;
   display: flex;
   align-items: center;
-  padding: 0 24px;
-  position: sticky;
+  padding: 0 5%;
+  position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 .burgers {
@@ -44,7 +46,9 @@ body {
 }
 
 main {
-  padding: 32px 24px;
+  position: relative;
+  top: 70px;
+  padding: 32px 5%;
 }
 
 .main-section {
@@ -63,12 +67,28 @@ h1 {
   font-weight: bold;
 }
 
+#navbar {
+  color: #fff;
+  display: none;
+}
+
 h2 {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   padding: 5px 7px;
   border: 1px solid #ffffff;
+}
+
+span.navbar-title {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 14px;
+  margin: 0 auto;
 }
 
 .sub-section > p {
@@ -85,7 +105,7 @@ h2 {
   font-size: 14px;
 }
 pre {
-  overflow: scroll;
+  overflow-x: auto;
   margin: 16px auto;
   background-color: #191a1b;
   border: 1px solid #eae1e1;
@@ -105,5 +125,31 @@ dfn {
   font-style: normal;
 }
 
-@media (min-width) {
+@media (min-width: 900px) {
+  .container {
+    position: relative;
+    margin: 0 5%;
+  }
+
+  #navbar {
+    display: block;
+    padding: 32px 5%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 30%;
+    min-width: 300px;
+    height: 100%;
+    border-right: 2.5px solid #bdbaba;
+  }
+
+  #main-doc {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+  }
+  .burgers {
+    display: none;
+  }
 }
