@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PHP8 - Documentation</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js" defer></script>
   </head>
   <body>
     <header class="main-header">
@@ -504,5 +503,22 @@
         </section>
       </main>
     </div>
+    <script>
+      const navbar = document.querySelector('#navbar');
+
+      const burgers = document.querySelector('.burgers');
+
+      const navLinks = document.querySelector('.link-list');
+
+      burgers.addEventListener('click', () => {
+        navbar.classList.toggle('show-navbar');
+      });
+
+      navLinks.addEventListener('click', (e) => {
+        if (e.target.nodeType === 1) {
+          navbar.classList.toggle('show-navbar');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -74,22 +74,27 @@ h1 {
 }
 
 .navbar {
-  display: none;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 #navbar {
   color: #fff;
   position: fixed;
-  height: 100vh;
   background-color: #444546;
-  z-index: 101;
   top: 70px;
   left: 0;
   width: 100%;
-  padding: 32px 5%;
+  z-index: 101;
 }
 
+#navbar header {
+  height: 100%;
+  overflow: hidden;
+}
 .show-navbar {
+  height: 100vh;
   display: block;
 }
 
@@ -110,6 +115,7 @@ span.navbar-title {
   font-size: 16px;
   padding: 10px 14px;
   margin: 0 auto;
+  margin: 32px 5%;
 }
 
 .sub-section > p {
@@ -149,6 +155,7 @@ dfn {
 
 nav header > ul {
   margin-top: 28px;
+  padding: 0 5% 32px 5%;
 }
 
 nav ul {
