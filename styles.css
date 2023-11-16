@@ -73,9 +73,24 @@ h1 {
   font-weight: bold;
 }
 
+.navbar {
+  display: none;
+}
+
 #navbar {
   color: #fff;
-  display: none;
+  position: fixed;
+  height: 100vh;
+  background-color: #444546;
+  z-index: 101;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 32px 5%;
+}
+
+.show-navbar {
+  display: block;
 }
 
 h2 {
@@ -161,7 +176,6 @@ nav a {
 
   #navbar {
     display: block;
-    padding: 32px 5%;
     position: fixed;
     top: 70px;
     left: 0;
@@ -180,4 +194,7 @@ nav a {
   .burgers {
     display: none;
   }
+}
+
+@media (max-width: 900px) {
 }
