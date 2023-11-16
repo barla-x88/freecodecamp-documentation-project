@@ -132,6 +132,23 @@ dfn {
   font-style: normal;
 }
 
+nav ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li ul {
+  margin-left: 16px;
+}
+nav a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 @media (min-width: 900px) {
   .container {
     position: relative;

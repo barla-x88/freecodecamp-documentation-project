@@ -36,7 +36,9 @@
           <span class="navbar-title">PHP 8 Documentation</span>
           <ul>
             <li>
-              <a href="#Introduction_to_PHP_8">Introduction to PHP 8</a>
+              <a href="#Introduction_to_PHP_8" class="nav-link"
+                >Introduction to PHP 8</a
+              >
               <ul>
                 <li><a href="#what_is_php">What is PHP</a></li>
                 <li><a href="#using_php">Using PHP in HTML</a></li>
@@ -53,13 +55,42 @@
               </ul>
             </li>
             <li>
-              <a href="#Data_types_and_operators">Data types and operators</a>
+              <a href="#Data_types_and_operators" class="nav-link"
+                >Data types and operators</a
+              >
+              <ul>
+                <li><a href="#data_types">PHP Data Types</a></li>
+                <li><a href="#php_operators">Operators in PHP</a></li>
+                <li><a href="#php_expressions">Expressions in PHP</a></li>
+              </ul>
             </li>
             <li>
-              <a href="#Control_structures_in_PHP">Control structures in PHP</a>
+              <a href="#Control_structures_in_PHP" class="nav-link"
+                >Control structures in PHP</a
+              >
+              <ul>
+                <li>
+                  <a href="#control_structure_type"
+                    >Types of control structures</a
+                  >
+                </li>
+                <li><a href="#conditionals">Conditional Statements</a></li>
+                <li><a href="#loops">Looping Statements</a></li>
+              </ul>
             </li>
-            <li><a href="#Functions_in_PHP">Functions in PHP</a></li>
-            <li><a href="#References">References</a></li>
+            <li>
+              <a href="#Functions_in_PHP" class="nav-link">Functions in PHP</a>
+              <ul>
+                <li><a href="#function_types">Types of functions</a></li>
+                <li><a href="#declaring_functions">Declaring Functions</a></li>
+                <li>
+                  <a href="#parameters_arguments"
+                    >Function Parameters and Arguments</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#References" class="nav-link">References</a></li>
           </ul>
         </header>
       </nav>
@@ -134,7 +165,7 @@
             </code>
           </section>
           <!-- section 3 -->
-          <section class="sub-section" id="data-output">
+          <section class="sub-section" id="data_output">
             <h2>Outputting Data to the Client</h2>
             <p>
               PHP provides several methods to output data to the client's
@@ -207,7 +238,7 @@
           <header>
             <h1>Data types and operators</h1>
           </header>
-          <section class="sub-section">
+          <section class="sub-section" id="data_types">
             <h2>PHP Data Types</h2>
             <p>PHP supports several data types:</p>
             <ul>
@@ -220,7 +251,7 @@
               <li>NULL: Represents a variable with no value.</li>
             </ul>
           </section>
-          <section class="sub-section">
+          <section class="sub-section" id="php_operators">
             <h2>Operators in PHP</h2>
             <p>
               <dfn>Operators</dfn> perform operations on variables and values.
@@ -243,7 +274,7 @@
               >
             </code>
           </section>
-          <section class="sub-section">
+          <section class="sub-section" id="php_expressions">
             <h2>Expressions in PHP</h2>
             <p>
               PHP supports various <dfn>expressions</dfn>, which are
@@ -271,7 +302,7 @@
           <header>
             <h1>Control structures in PHP</h1>
           </header>
-          <section class="sub-section">
+          <section class="sub-section" id="control_stucture_type">
             <h2>Different types of control structures in PHP</h2>
             <p>PHP supports Various types of control structures</p>
             <ul>
@@ -282,7 +313,7 @@
               <li>Break and Continue Statements</li>
             </ul>
           </section>
-          <section class="sub-section">
+          <section class="sub-section" id="conditionals">
             <h2>Conditional Statements</h2>
             <p>If Statement</p>
             <code>
@@ -322,7 +353,7 @@
               >
             </code>
           </section>
-          <section class="sub-section">
+          <section class="sub-section" id="loops">
             <h2>Looping Statements</h2>
             <p>For Loop</p>
             <code>
@@ -375,7 +406,7 @@
           <header>
             <h1>Functions in PHP</h1>
           </header>
-          <section class="sub-section">
+          <section class="sub-section" id="function_types">
             <h2>Types of functions</h2>
             <p>
               <dfn>Functions</dfn> are blocks of reusable code that can be
@@ -391,7 +422,7 @@
               <li>Variadic Functions</li>
             </ul>
           </section>
-          <section class="sub-section">
+          <section class="sub-section" id="declaring_functions">
             <h2>Declaring Functions</h2>
             <p>A function definition looks like this:</p>
             <code>
@@ -405,7 +436,7 @@
               >
             </code>
           </section>
-          <section class="sub-section">
+          <section class="sub-section" id="parameters_arguments">
             <h2>Function Parameters and Arguments</h2>
             <p>
               <dfn>Parameters</dfn> are variables used in a function declaration
@@ -418,20 +449,20 @@
               <dfn>Arguments</dfn> are the actual values that are passed to a
               function when it is called.
             </p>
+            <code>
+              <pre>
+  &lt;?php
+    //Function with parameter
+    function greet($name) {
+      echo "Hello, $name!";
+    }
+  
+    //Calling function with argument
+    greet("John");
+  </pre
+              >
+            </code>
           </section>
-          <code>
-            <pre>
-&lt;?php
-  //Function with parameter
-  function greet($name) {
-    echo "Hello, $name!";
-  }
-
-  //Calling function with argument
-  greet("John");
-</pre
-            >
-          </code>
         </section>
         <!-- MAIN SECTION 4 ENDS HERE -->
 
