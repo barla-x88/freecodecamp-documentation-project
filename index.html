@@ -504,19 +504,35 @@
       </main>
     </div>
     <script>
+      //navigation menu list
       const navbar = document.querySelector('#navbar');
 
+      //menu toggle button
       const burgers = document.querySelector('.burgers');
 
+      //navigation links
       const navLinks = document.querySelector('.link-list');
 
+      //display navbar on toggle button click
       burgers.addEventListener('click', () => {
         navbar.classList.toggle('show-navbar');
       });
 
+      //hide navigation link list on link click
+      // and scroll into correct position
       navLinks.addEventListener('click', (e) => {
-        if (e.target.nodeType === 1) {
+        if (e.target.nodeName === 'A') {
           navbar.classList.toggle('show-navbar');
+          e.preventDefault();
+
+          //scroll into correct position
+          const element = e.target.getAttribute('href');
+          const { left, top } = document
+            .querySelector(element)
+            .getBoundingClientRect();
+
+          // 90 is the number i came up by experimenting
+          window.scrollTo(left + window.scrollX, top - 90 + scrollY);
         }
       });
     </script>
