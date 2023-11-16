@@ -13,6 +13,7 @@ html {
 
 body {
   background-color: #444546;
+  font-family: 'Inria Sans', sans-serif;
 }
 
 .main-header {
@@ -152,6 +153,7 @@ code::before {
 }
 
 pre {
+  font-family: 'Azeret Mono', monospace;
   overflow-x: auto;
   margin: 16px auto;
   background-color: #191a1b;
