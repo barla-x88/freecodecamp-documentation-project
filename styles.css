@@ -108,14 +108,14 @@ h2 {
 
 span.navbar-title {
   display: block;
+  max-width: 300px;
   text-align: center;
   font-weight: bold;
   border: 1px solid #ffffff;
   text-align: center;
   font-size: 16px;
   padding: 10px 14px;
-  margin: 0 auto;
-  margin: 32px 5%;
+  margin: 32px auto;
 }
 
 .sub-section > p {
@@ -132,6 +132,25 @@ span.navbar-title {
   color: white;
   font-size: 14px;
 }
+
+code {
+  position: relative;
+}
+
+code::before {
+  content: 'PHP';
+  font-size: 12px;
+  font-weight: bold;
+  width: 42px;
+  height: 14px;
+  padding: 0 10px;
+  position: absolute;
+  right: 13px;
+  top: 9px;
+  background-color: #d1f5ff;
+  color: #000;
+}
+
 pre {
   overflow-x: auto;
   margin: 16px auto;
@@ -201,7 +220,4 @@ nav a {
   .burgers {
     display: none;
   }
-}
-
-@media (max-width: 900px) {
 }
