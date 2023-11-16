@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 70px;
 }
 
 *,
@@ -55,9 +57,14 @@ main {
   color: #ffffff;
 }
 
+.main-section:nth-of-type(1) {
+  scroll-margin-top: 70px;
+}
+
 .main-section:not(:nth-of-type(1)) {
   border-top: 1px solid transparent; /* fixes border collapsing */
   margin-top: 3rem;
+  scroll-snap-align: start;
 }
 
 .sub-section {
