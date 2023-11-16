@@ -55,6 +55,11 @@ main {
   color: #ffffff;
 }
 
+.main-section:not(:nth-of-type(1)) {
+  border-top: 1px solid transparent; /* fixes border collapsing */
+  margin-top: 3rem;
+}
+
 .sub-section {
   margin: 18px auto;
 }
@@ -94,6 +99,7 @@ span.navbar-title {
 .sub-section > p {
   margin-top: 16px;
   font-size: 14px;
+  line-height: 135%;
 }
 
 .sub-section > p + p {
